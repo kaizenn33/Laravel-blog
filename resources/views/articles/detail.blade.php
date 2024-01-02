@@ -47,11 +47,9 @@
                         <b>Written by: <span class="text-primary">{{ $comment->user->name }}</span></b>
                         <div class="text-muted">
                              {{$comment->created_at->diffForHumans()}}
-                        </div class="mt-2">
-                        <a href="{{url("/comment/delete/$comment->id") }}" class="btn-close float-end"></a>
-                        <select name="comment" class="fa-solid fa-ellipsis-h float-end">
-                            <option value=""></option>
-                        </select>
+                        </div class="mt-2">                            
+                                <a href="{{url("/comment/delete/$comment->id") }}" class="btn-close float-end"></a>
+                            </option>
                             {{$comment->content}}
                     </div>
                     @endforeach
