@@ -49,6 +49,9 @@
                              {{$comment->created_at->diffForHumans()}}
                         </div class="mt-2">
                         <a href="{{url("/comment/delete/$comment->id") }}" class="btn-close float-end"></a>
+                        <select name="comment" class="fa-solid fa-ellipsis-h float-end">
+                            <option value=""></option>
+                        </select>
                             {{$comment->content}}
                     </div>
                     @endforeach
